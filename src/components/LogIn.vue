@@ -35,7 +35,7 @@
             <button class="submit" @click="loginWithGoogle">Log In Dengan Google</button>
           </div>
           <div class="top">
-            <span>Belum punya akun? <router-link to="/signup">Sign Up</router-link></span>
+            <span>Belum punya akun? <router-link to="/">Sign Up</router-link></span>
           </div>
         </div>
       </div>
@@ -155,8 +155,8 @@ header {
 }
 .input-field {
   font-size: 15px;
-  background: #f0f0f0;
-  color: gray;
+  background: gray;
+  color: black;
   height: 50px;
   margin-top: 20px;
   width: 100%;
@@ -168,17 +168,17 @@ header {
 }
 .input-field:hover,
 .input-field:focus {
-  background: rgba(255, 255, 255, 0.25);
+  background: darkgray;
 }
 ::-webkit-input-placeholder {
-  color: gray;
+  color: black;
 }
 .input-box i {
   position: relative;
 
   top: -35px;
   left: 17px;
-  color: gray;
+  color: black;
 }
 .submit {
   font-size: 15px;
@@ -191,12 +191,12 @@ header {
   margin-bottom: 10px;
   border-radius: 10px;
   outline: none;
-  background: (blue);
+  background:gray;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
 .submit:hover {
-  background: rgba(blue);
+  background:darkgray;
   box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 </style>

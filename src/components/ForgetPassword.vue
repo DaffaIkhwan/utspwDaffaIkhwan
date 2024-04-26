@@ -106,8 +106,8 @@
   
   .input-field {
       font-size: 15px;
-      background: #f0f0f0;
-      color: gray;
+      background: gray;
+      color: black;
       height: 50px;
       width: 100%;
       padding: 0 10px 0 45px;
@@ -119,7 +119,7 @@
   
   .input-field:hover,
   .input-field:focus {
-      background: rgba(255, 255, 255, 0.25);
+      background: darkgrey;
   }
   
   .input-box i {
@@ -127,7 +127,13 @@
       
       top: -35px;
       left: 17px;
-      color: gray;
+      color: black;
+  }
+  
+
+
+  ::-webkit-input-placeholder {
+    color: black;
   }
   
   .submit {
@@ -141,7 +147,7 @@
       margin-bottom: 10px;
       border-radius: 30px;
       outline: none;
-      background: rgba(0, 0, 0, 0.1);
+      background:gray;
       cursor: pointer;
       transition: .3s ease-in-out;
       display: flex;

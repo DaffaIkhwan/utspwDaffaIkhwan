@@ -162,6 +162,12 @@
     margin-bottom: 20px;
   }
   
+  .select-box select:focus {
+    border: 2px solid black;
+    box-shadow:7px solid #000;
+}
+
+
   .container label {
     font-size: 18px;
     font-weight: 500;
@@ -227,30 +233,39 @@
     margin-top: 10px;
   }
   
+.file-selector{
+  color: blue;
+}
+
+.file-selector:hover {
+  background-color: darkblue; /* Mengubah warna teks menjadi dark blue saat dihover */
+}
+
+
   .select-box select {
     height: 100%;
     width: 100%;
     outline: none;
-    border: none;
-    color: #707070;
+    border: 1px solid var(--gray);
+    color:black;
     font-size: 1rem;
   }
   
   .form button {
     height: 55px;
     width: 100%;
-    color: #fff;
+    color: white;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 30px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
-    background: #28a745; /* Warna hijau */
+    background: green; /* Warna hijau */
   }
   
   .form button:hover {
-    background: #218838; /* Warna hijau gelap saat dihover */
+    background:dark-blue;
   }
   
   .container_cloud {
@@ -284,6 +299,11 @@
     color: #707EA0;
   }
   
+
+  ::-webkit-input-placeholder {
+    color: black;
+  }
+
   .drop-section {
     min-height: 250px;
     border: 1px dashed #A8B3E3;
@@ -386,7 +406,7 @@
   }
   
   .list-section li:hover {
-    box-shadow: #E3EAF9 0px 0px 4px 0px, #E3EAF9 0px 12px 16px 0px;
+    box-shadow: darkgray 0px 0px 4px 0px, darkgray 0px 12px 16px 0px;
   }
   
   .list-section li .col {
@@ -402,7 +422,7 @@
     flex: .75;
     text-align: left;
     font-size: 0.9rem;
-    color: #3e4046;
+    color:black;
     padding: 8px 10px;
   }
   
@@ -415,7 +435,7 @@
   }
   
   .list-section li .col .file-name span {
-    color: #707EA0;
+    color: black;
     float: right;
   }
   
@@ -424,7 +444,7 @@
     height: 5px;
     margin-top: 8px;
     border-radius: 8px;
-    background-color: #dee6fd;
+    background-color: gray;
   }
   
   .list-section li .file-progress span {
@@ -439,7 +459,7 @@
   .list-section li .col .file-size {
     font-size: 0.75rem;
     margin-top: 3px;
-    color: #707EA0;
+    color: black;
   }
   
   .list-section li .col svg.cross,
@@ -454,7 +474,7 @@
   }
   
   .list-section li .col svg.tick {
-    fill: #50a156;
+    fill: blue;
     background-color: transparent;
   }
   
@@ -503,7 +523,6 @@
     width: 95%;
     border-radius: 7px;
     outline: none;
-    border: 1px solid grey;
     padding: 0 10px;
   }
   </style>
